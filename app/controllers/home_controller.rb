@@ -9,8 +9,8 @@ class HomeController < ApplicationController
   end
 
   def sent_opt
-    account_sid = 'AC4782cdc18747e3eb4fc049924e49674b'
-    auth_token = '46150e7364243d26312f69749119dbcd'
+    account_sid =
+    auth_token = 
     @client = Twilio::REST::Client.new(account_sid, auth_token)
 
     contct_no = ISO3166::Country[current_user.country_code].country_code + current_user.contact_no
